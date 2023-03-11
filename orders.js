@@ -61,7 +61,14 @@ console.log(`The order for customer ${customerId} is now ${newStatus}`);
 
 //CODE HERE
 
+const firstTicket = class {
+    items = 1;
+    orderTime = "6 o'clock";
+    customerId = 3456;
+    status = "purchased";
+}
 
+console.log(firstTicket);
 
 /*
     Call the `updateStatus` method on
@@ -70,3 +77,5 @@ console.log(`The order for customer ${customerId} is now ${newStatus}`);
 */
 
 //CODE HERE
+
+firstTicket.updateStatus("cooking");

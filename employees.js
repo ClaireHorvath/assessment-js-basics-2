@@ -45,7 +45,7 @@ console.log(Employee);
 
 //CODE HERE
 
-// let empOne = new Employee("Jess", "weekday mornings", "weekday afternoons");
+let empOne = new Employee("Jess", "weekday mornings, weekday afternoons");
 
 /*
     Call the `getSchedule` method on the
@@ -54,7 +54,7 @@ console.log(Employee);
 
 //CODE HERE
 
-// empOne.getSchedule();
+empOne.getSchedule();
 
 /*
     Make a copy of the empOne object
@@ -70,8 +70,8 @@ console.log(Employee);
 
 //CODE HERE
 
-// let empTwo = {...name, ...shifts};
-// console.log(empTwo);
+let empTwo = {...name, ...shifts};
+console.log(empTwo);
 
 //////////////////PROBLEM 2////////////////////
 /*  
