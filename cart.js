@@ -37,6 +37,11 @@ const cart = [
 
 // const summedPrice = cart.reduce(/* CALLBACK HERE */)
 
+const totalCart = cart.reduce(function(acc, elem){
+    return acc + elem.price;
+});
+
+console.log(totalCart);
 
 //////////////////PROBLEM 2////////////////////
 /*  
@@ -55,7 +60,13 @@ const cart = [
 
 //CODE HERE
 
+const carTotal = 500;
 
+function calcFinalPrice(carTotal, couponValue, tax) {
+    calcFinalPrice(carTotal + .06)
+}
+
+console.log(calcFinalPrice);
 
 //////////////////PROBLEM 3////////////////////
 /*  
@@ -82,9 +93,32 @@ const cart = [
 
 */
 
+// I would want to know the name of the customer for any potential marketing
+// mail items and if they would like to set up a rewards account with
+// the store. I want to know if the customer has a rewards account so 
+// that they can access any potential discounts on their purchase. I 
+// would want to know their age to see if they can qualify for the senior
+// citizens diiscount available to 60 year olds and older. I would 
+// want to know the customer's gender to be able to market various gender 
+// specific items, such as feminine hygiene products, to them. And I 
+// would want to know their birthday to give them a discount of 10% on 
+// that day. 
+
 /*
     Now, create a customer object following your own
     guidelines.
 */
 
 //CODE HERE
+
+const customerOne = [
+    {
+        name: "Ann",
+        rewards: "yes", 
+        age: 60,
+        gender: "female", 
+        birthday: "October 10"
+    }
+]
+
+console.log(customerOne);
