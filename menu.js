@@ -32,7 +32,16 @@
 
 //CODE HERE
 
+const pizza = {
+    name: "cheese",
+    price: 2,
+    category: "classic entree",
+    popularity: 1,
+    rating: 5,
+    tags: ["customer favorite", "old school classic", "cheesetastic"]
+}
 
+console.log(pizza);
 
 //////////////////PROBLEM 2////////////////////
 /* 
@@ -44,6 +53,7 @@
 
 //CODE HERE
 
+console.log(pizza.popularity);
 
 /*
     Second, log the second tag in your pizza's
@@ -54,6 +64,7 @@
 
 //CODE HERE
 
+console.log(pizza.tags[1]);
 
 /*
     Third, destructure the price off of the
@@ -64,6 +75,10 @@
 
 //CODE HERE
 
+for (let price in pizza) {
+    let newPrice = price++;
+    console.log(`The pizza's price is ${newPrice}`);
+}
 
 /*
     Fourth, and last, destructure the category
@@ -74,6 +89,9 @@
 
 //CODE HERE
 
+let {entree: classic} = category;
+
+console.log(category);
 
 //////////////////PROBLEM 3////////////////////
 /* 
@@ -89,7 +107,49 @@
 
 //CODE HERE
 
+let foodArr = ["fried chicken", "spaghetti", "mashed potatoes", "corn", "garlic bread"];
 
+const friedChicken = {
+    price: 16,
+    category: "entree",
+    popularity: 1,
+    rating: 5,
+    tags: ["comfort food", "flies right in your mouth"]
+}
+
+const spaghetti = {
+    price: 18,
+    category: "entree",
+    popularity: 1,
+    rating: 5, 
+    tags: ["classic italian", "good on a rainy day"]
+}
+
+const mashedPotatoes = {
+    price: 6,
+    category: "side",
+    popularity: 1,
+    rating: 5,
+    tags: ["creamy goodness", "whipped"]
+}
+
+const corn = {
+    price: 6,
+    category: "side",
+    popularity: 3,
+    rating: 4,
+    tags: ["buttery", "steamed fresh"]
+}
+
+const garlicBread = {
+    price: 5,
+    category: "side",
+    popularity: 2,
+    rating: 5,
+    tags: ["melts in your mouth", "cheesetastic"]
+}
+
+console.log(foodArr);
 
 //////////////////PROBLEM 4////////////////////
 /* 
@@ -107,7 +167,11 @@
 
 // const filteredFood = foodArr.filter(/* CALLBACK HERE */)
 
+const foodFilter = foodArr.filter(function(tags){
+    return tags === "flies right in your mouth";
+});
 
+console.log(foodFilter);
 
 //////////////////PROBLEM 5////////////////////
 /* 
@@ -150,6 +214,9 @@
 
 //CODE HERE
 
+// function filterByProperty(property, number, type) {
+//     if ()
+// }
 
 /*
     Invoke the `filterByProperty` function passing
