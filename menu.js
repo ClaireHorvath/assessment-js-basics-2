@@ -214,9 +214,20 @@ console.log(foodFilter);
 
 //CODE HERE
 
-// function filterByProperty(property, number, type) {
-//     if ()
-// }
+function filterByProperty(property, number, type) {
+    for (let i = 0; i >= 4; i++)
+        if (type >= 4) {
+            return foodArr[i];
+        } else {
+            return foodArr[i];
+        }
+        let filteredArr = foodArr.filter(function(element){
+            return filteredArr;
+        });
+        console.log(filteredArr);
+}
+
+console.log(filterByProperty);
 
 /*
     Invoke the `filterByProperty` function passing
@@ -226,3 +237,7 @@ console.log(foodFilter);
 */
 
 //CODE HERE
+
+property.filterByProperty("rating");
+number.filterByProperty(4);
+type.filterByProperty("above");
