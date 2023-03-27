@@ -37,10 +37,10 @@ const cart = [
 
 // const summedPrice = cart.reduce(/* CALLBACK HERE */)
 
-const totalCart = cart.reduce(function(acc, elem){
-    return acc + elem.price;
-});
+const pricesArray = cart.map(item => item.price);
+console.log(pricesArray);
 
+const totalCart = pricesArray.reduce((currentElement, nextElement) => currentElement + nextElement, 0);
 console.log(totalCart);
 
 //////////////////PROBLEM 2////////////////////
@@ -60,13 +60,15 @@ console.log(totalCart);
 
 //CODE HERE
 
-const carTotal = 500;
+let carTotal = 500;
+let couponValue = 0.35;
+let tax = 0.06;
 
 function calcFinalPrice(carTotal, couponValue, tax) {
-    calcFinalPrice(carTotal + .06)
+    return ((carTotal + (carTotal * 0.06)) * (1 - couponValue));
 }
 
-console.log(calcFinalPrice);
+console.log(calcFinalPrice(carTotal, couponValue, tax));
 
 //////////////////PROBLEM 3////////////////////
 /*  
@@ -115,7 +117,7 @@ const customerOne = [
     {
         name: "Ann",
         rewards: "yes", 
-        age: 60,
+        age: 62,
         gender: "female", 
         birthday: "October 10"
     }
