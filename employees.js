@@ -70,7 +70,10 @@ empOne.getSchedule();
 
 //CODE HERE
 
-let empTwo = {...name, ...shifts};
+let empTwo = {...empOne};
+
+empTwo.name = "Nick";
+
 console.log(empTwo);
 
 //////////////////PROBLEM 2////////////////////
@@ -106,13 +109,11 @@ class Manager extends Employee {
     constructor(name, shifts, employees) {
         super(name, shifts);
         this.employees = employees;
-        return employees [empOne, empTwo];
     }
     getEmployees() {
         console.log(`${name} manages ${employees}`);
     }
     addEmployee(emp) {
-        this.emp = emp;
         employees.push("Bart");
     }
 }
