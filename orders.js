@@ -32,21 +32,17 @@
 //CODE HERE
 
 class Ticket {
-    costructor(items, orderTime, customerId){
-        this.items = items;
-        this.orderTime = orderTime;
-        this.customerId = customerId;
-        this.status = "queued";
+    constructor(items, orderTime, customerId){
+        this.items = items
+        this.orderTime = orderTime
+        this.customerId = customerId
+        this.status = "queued"
     }
     updateStatus(newStatus) {
-        this.status = newStatus + "ordered";
-        console.log(this.status);
+        this.status = newStatus
+        console.log(`The order for customer ${this.customerId} is now ${this.status}`)
     }
-    }
-let customerId = 2345;
-let newStatus = "ordered";
-
-console.log(`The order for customer ${customerId} is now ${newStatus}`);
+}
 
 /*
     Create a new instance of your class.
@@ -61,12 +57,7 @@ console.log(`The order for customer ${customerId} is now ${newStatus}`);
 
 //CODE HERE
 
-const firstTicket = class {
-    items = 1;
-    orderTime = "6 o'clock";
-    customerId = 3456;
-    status = "purchased";
-}
+let firstTicket = new Ticket(["pizza", "bread", "soda"], "7:03", 575)
 
 console.log(firstTicket);
 
