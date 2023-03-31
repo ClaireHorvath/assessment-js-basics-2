@@ -116,7 +116,7 @@ class Manager extends Employee {
     }
 }
 
-// console.log(Manager);
+console.log(Manager);
 
 /*
     Create a new instance of your class.

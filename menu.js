@@ -75,10 +75,14 @@ console.log(pizza.tags[1]);
 
 //CODE HERE
 
-for (let price in pizza) {
-    let newPrice = price++;
-    console.log(`The pizza's price is ${newPrice}`);
-}
+// for (let price in pizza) {
+//     let newPrice = price++;
+//     console.log(`The pizza's price is ${newPrice}`);
+// }
+
+let {pizza: price} = 3;
+
+console.log(pizza.price);
 
 /*
     Fourth, and last, destructure the category
@@ -89,9 +93,13 @@ for (let price in pizza) {
 
 //CODE HERE
 
-let {entree: classic} = category;
+// let {entree: classic} = category;
 
-console.log(category);
+// console.log(category);
+
+let {entree: category} = "gluten free";
+
+console.log(entree.category);
 
 //////////////////PROBLEM 3////////////////////
 /* 
