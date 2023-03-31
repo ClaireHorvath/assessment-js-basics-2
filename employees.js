@@ -31,7 +31,7 @@ class Employee {
     }
 }
 
-console.log(Employee);
+// console.log(Employee);
 
 /*
     Create a new instance of your class.
@@ -45,7 +45,9 @@ console.log(Employee);
 
 //CODE HERE
 
-let empOne = new Employee("Jess", "weekday mornings, weekday afternoons");
+let empOne = new Employee("Jess", ["weekday mornings", "weekday afternoons"]);
+
+// console.log(empOne);
 
 /*
     Call the `getSchedule` method on the
@@ -101,24 +103,20 @@ console.log(empTwo);
 
 //CODE HERE
 
-let employees = ["Jess", "Nick"];
-employees.push("Bart");
-console.log(employees);
-
 class Manager extends Employee {
     constructor(name, shifts, employees) {
         super(name, shifts);
         this.employees = employees;
     }
     getEmployees() {
-        console.log(`${name} manages ${employees}`);
+        console.log(`${this.name} manages ${this.employees}`);
     }
     addEmployee(emp) {
-        employees.push("Bart");
+        this.employees.push(emp);
     }
 }
 
-console.log(Manager);
+// console.log(Manager);
 
 /*
     Create a new instance of your class.
@@ -133,7 +131,7 @@ console.log(Manager);
 
 //CODE HERE
 
-let manager = new Manager("Winston", "weekday mornings, weekday afternoons", "Cece and Schmidt");
+let manager = new Manager("Winston ", ["weekday mornings", "weekday afternoons"], ["Cece", " Schmidt"]);
 
 /*
     Call the `getEmployees` method on the
@@ -152,7 +150,7 @@ manager.getEmployees();
 
 //CODE HERE 
 
-manager.addEmployee("Coach");
+manager.addEmployee(" Coach");
 
 /*
     Call the `getEmployees` method on the
